@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg1 {
+    background-image: url('https://i.pinimg.com/564x/93/d1/b8/93d1b8d8aeafc8d8137ab289774f66de.jpg');
+}
+
+.bg2 {
+    background-image: url('https://i.pinimg.com/564x/2a/f4/4b/2af44b48ec2df06ad86fbb8f05146b35.jpg');
+}
+
+.center-message {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.black {
+    font-size: 2em;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    padding: 150px;
+    text-align: center;
+}
