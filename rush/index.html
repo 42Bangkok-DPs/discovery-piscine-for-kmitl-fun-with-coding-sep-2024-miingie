@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<header  id="head">
+    <h1>My Project CV</h1>
+</header>
+
+<body>
+    <div class="Screen">
+        <div class="profile1" style="background-color: #fee0ca" id="Screen">
+            <a href = "profilemin.html"><img src="https://i.ibb.co/2WjhJSQ/S-240746558.jpg" alt="Chanidapa" class="circleimage" onmouseover="changecolor('red')" onmouseout="changecolor('default')" id="per1"></a>
+            <a href = "profilemin.html" class="href1"onmouseover="changecolor('red')" onmouseout="changecolor('default')" id="per2">Chanidapa</a>
+        </div>
+        <div class="profile1" style="background-color: #f1cdb3;" id="Screen1">
+            <a href = "profileplam.html"><img src="https://i.ibb.co/HVSMX33/S-240779600.jpg" atl="Napasin" class="circleimage" style="left: 75%; top: 50%;" onmouseover="changecolor('blue')" onmouseout="changecolor('default')" id="per3"></a>
+            <a href = "profileplam.html" class="href2" onmouseover="changecolor('blue')" onmouseout="changecolor('default')" id="per4">Napasin</a>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function changecolor(i) {
+        console.log(i);
+        switch (i) {
+            case "blue" :
+                document.getElementById("head").style.backgroundColor = "#fa9494";
+                document.getElementById("Screen").style.backgroundColor = "#fa9494";
+                document.getElementById("Screen1").style.backgroundColor = "#fa9494";
+                document.getElementById("per3").style.boxShadow = "2px 5px";
+                document.getElementById("per4").style.boxShadow = "2px 5px";
+                break;
+            case "red" :
+                document.getElementById("head").style.backgroundColor = "#e3cef1";
+                document.getElementById("Screen").style.backgroundColor = "#e3cef1";
+                document.getElementById("Screen1").style.backgroundColor = "#e3cef1";
+                document.getElementById("per1").style.boxShadow = "2px 5px";
+                document.getElementById("per2").style.boxShadow = "2px 5px";
+                break;
+            case "default" :
+                document.getElementById("head").style.backgroundColor = "#feeee1";
+                document.getElementById("Screen").style.backgroundColor = "#fee0ca";
+                document.getElementById("Screen1").style.backgroundColor = "#f1cdb3";
+                document.getElementById("per1").style.boxShadow = "none";
+                document.getElementById("per2").style.boxShadow = "none";
+                document.getElementById("per3").style.boxShadow = "none";
+                document.getElementById("per4").style.boxShadow = "none";
+                break;
+        }
+    }
+
+</script>

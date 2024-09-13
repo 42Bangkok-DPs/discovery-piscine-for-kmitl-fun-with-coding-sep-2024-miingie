@@ -1,0 +1,108 @@
+header {
+    width: 100%;
+    background-color: #feeee1;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-family: 'Courier New', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.Screen {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.circleimage {
+    width:300%; 
+    height: 150%; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 60%;
+    margin-bottom: 20%; 
+}
+
+.profile1 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; 
+    position: relative; 
+    transition: background-color 0.5s ease;
+}
+
+.profile1 img {
+    width: 100%;
+    max-width: 350%;
+    height: auto; 
+}
+
+.href1, .href2 {
+    font-size: 30px;
+    text-decoration: none;
+    box-sizing: content-box;
+    border-radius: 25px;
+    color: black;
+    padding: 10px;
+    font-family: 'Courier New', sans-serif;
+    display: inline-block;
+    margin: 10px;
+}
+
+.href1 {
+    background-color: #feeee1;
+}
+
+.href2 {
+    background-color: #f4dac5;
+}
+
+@media (max-width: 768px) {
+    .profile1 {
+        width: 100%; 
+    }
+
+    .circleimage {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .profile1 img {
+        width: 50%; 
+    }
+
+    .href1, .href2 {
+        font-size: 24px; 
+        padding: 8px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .circleimage {
+        width: 80%; 
+        height: 80%; 
+    }
+
+    .profile1 img {
+        width: 75%; 
+    }
+
+    .href1, .href2 {
+        font-size: 20px; 
+        padding: 6px; 
+    }
+}
+
+* {
+    margin: 0;
+}
